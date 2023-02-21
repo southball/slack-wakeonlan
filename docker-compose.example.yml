@@ -1,0 +1,11 @@
+version: "3"
+services:
+  wakeonlan-bot:
+    build: .
+    network_mode: host
+    environment:
+      - SLACK_APP_TOKEN=
+      - SLACK_SIGNING_SECRET=
+      - SLACK_BOT_TOKEN=
+      - SLACK_USER_IDS=
+      - MAC_ADDRESS=
